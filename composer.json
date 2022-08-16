@@ -1,0 +1,35 @@
+{
+    "name": "shsabih/mongodb-datatable",
+    "description": "This is description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shaikh Sabih",
+            "email": "shmsabih_sms@hotmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^5.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shexpert\\MDatatable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shexpert\\MDatatable\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shexpert\\MDatatable\\DatatableServiceProvider"
+            ],
+            "aliases": {
+                "ShexpertDatatable": "Shexpert\\MDatatable\\Facades\\ShexpertDatatable"
+            }
+        }
+    }
+}
